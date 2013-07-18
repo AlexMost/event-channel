@@ -1,10 +1,11 @@
 {
   "name": "event-channel",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "Event handling implementation.",
   "main": "lib-js/index.js",
   "scripts": {
-    "test": "cake test"
+    "test": "cake test",
+    "postinstall": "cake build"
   },
   "repository": {
     "type": "git",
