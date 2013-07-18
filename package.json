@@ -1,0 +1,23 @@
+{
+  "name": "event-channel",
+  "version": "0.0.0",
+  "description": "Event handling implementation.",
+  "main": "lib-js/index.js",
+  "scripts": {
+    "test": "cake test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/AlexMost/event-channel.git"
+  },
+  "keywords": [
+    "events",
+    "emitter",
+    "channel"
+  ],
+  "author": "Alexander Mostovenko",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/AlexMost/event-channel/issues"
+  }
+}
