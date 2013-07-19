@@ -4,7 +4,8 @@
   "description": "Event handling implementation.",
   "main": "./lib-js/index.js",
   "scripts": {
-    "test": "cake test"
+    "test": "cake test",
+    "postinstall": "cake build"
   },
   "repository": {
     "type": "git",
