@@ -1,8 +1,8 @@
 {
   "name": "event-channel",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Event handling implementation.",
-  "main": "./lib-js/index.js",
+  "main": "./lib-js/ev_channel.js",
   "scripts": {
     "test": "cake test",
     "postinstall": "cake build"
