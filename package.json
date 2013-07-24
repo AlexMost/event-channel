@@ -1,6 +1,6 @@
 {
   "name": "event-channel",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Event handling implementation.",
   "main": "./lib-js/ev_channel.js",
   "scripts": {

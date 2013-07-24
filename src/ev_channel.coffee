@@ -1,7 +1,7 @@
 Emitter = ->
   callbacks = {}
 
-  pub = (ev, callback) ->
+  sub = (ev, callback) ->
     evs   = ev.split(' ')
     calls = callbacks
     for name in evs
@@ -9,7 +9,7 @@ Emitter = ->
       callbacks[name].push callback
 
 
-  sub = (args...) ->
+  pub = (args...) ->
     ev = args.shift()
     return unless callbacks[ev]
     for callback in callbacks[ev]
