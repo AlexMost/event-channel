@@ -35,7 +35,7 @@ Emitter = ->
 
   callbacks_map = -> callbacks
 
-  {bind, trigger, unbind, callbacks_map}
+  {sub, pub, unsub, callbacks_map}
 
 emitter = new Emitter()
 
