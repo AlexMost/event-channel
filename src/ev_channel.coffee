@@ -1,7 +1,7 @@
-Emitter = -> 
+Emitter = ->
   callbacks = {}
 
-  bind = (ev, callback) ->
+  pub = (ev, callback) ->
     evs   = ev.split(' ')
     calls = callbacks
     for name in evs
@@ -9,7 +9,7 @@ Emitter = ->
       callbacks[name].push callback
 
 
-  trigger = (args...) ->
+  sub = (args...) ->
     ev = args.shift()
     return unless callbacks[ev]
     for callback in callbacks[ev]
@@ -18,7 +18,7 @@ Emitter = ->
     true
 
 
-  unbind = (ev, callback) ->
+  unsub = (ev, callback) ->
     evs = ev.split ' '
     for name in evs
       list = callbacks[name]
